@@ -1,0 +1,8 @@
+name: EffectsProj
+main: me.CrescendoFX.main
+version: 1.0
+description: stupid kids are cool
+commands:
+    ee:
+        description: Cool effects
+        usage: /<command>
