@@ -15,11 +15,14 @@ import net.md_5.bungee.api.ChatColor;
 public class main extends JavaPlugin{
 
 	ArrayList<String> itemWan = new ArrayList<String>();
+	ArrayList<String> itemTwo = new ArrayList<String>();
 	
 	public void createGUI(Player p){
 		Inventory inv = Bukkit.getServer().createInventory(null, 9, MANDAR_NAME);
 		
 		ItemStack one = new ItemStack(Material.BLAZE_POWDER);
+		
+		ItemStack two = new
 		
 		ItemMeta oneMeta = one.getItemMeta();
 		
