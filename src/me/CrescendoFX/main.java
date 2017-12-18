@@ -16,6 +16,7 @@ public class main extends JavaPlugin{
 
 	ArrayList<String> itemWan = new ArrayList<String>();
 	ArrayList<String> itemTwo = new ArrayList<String>();
+	ArrayList<String> itemtwee = new ArrayList<String>();
 	
 	public void createGUI(Player p){
 		Inventory inv = Bukkit.getServer().createInventory(null, 9, MANDAR_NAME);
@@ -51,7 +52,8 @@ public class main extends JavaPlugin{
 	}
 	
 	final String MANDAR_NAME = ChatColor.RED + "[Flame Particles Menu]";
-	final String MANDAR_FIRSTITEM = ChatColor.RED + "[Click here to enable effects!]";
+	final String MANDAR_FIRSTITEM = ChatColor.RED + "[Click here to enable first!]";
+	final String MANDAR_SECONDITEMDISABLE = ChatColor.RED + "[Click here to enable second item]"
 	final String MANDAR_FIRSTITEMDISABLE = ChatColor.RED + "[Click here to disable effects!]";
 	
 	
