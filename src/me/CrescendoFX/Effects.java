@@ -18,6 +18,12 @@ public class Effects implements CommandExecutor{
 		if(plugin.itemWan.contains(p.getName())) {
 			plugin.secGUI(p);
 		}
+		if(plugin.itemTwo.contains(p.getName())) {
+			plugin.secGUI(p);
+		}
+		if(plugin.itemtwee.contains(p.getName())) {
+			plugin.secGUI(p)	
+		}
 		
 		return true;
 	}
