@@ -17,5 +17,8 @@ public class MoveEvent implements Listener{
 		if(plugin.itemWan.contains(p.getName())) {
 			p.playEffect(p.getLocation(), Effect.MOBSPAWNER_FLAMES, 50);
 		}
+		if(plugin.itemTwo.contains(p.getName())) {
+			p.playEffect(p.getLocation(), Effect.BLAZE_SHOOT, 50);
+		}
 	}
 }
