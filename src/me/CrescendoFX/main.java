@@ -45,15 +45,6 @@ public class main extends JavaPlugin{
 	}
 	public void secGUI(Player p){
 		
-		if(itemWan().contains(p.getName)){
-			itemWan.remove(p.getName);
-		}
-		if(itemTwo().contains(p.getName)){
-			itemTwo.remove(p.getName);
-		}
-		if(itemtwee().contains(p.getName)){
-			itemtwee.remove(p.getName);
-		}
 		Inventory inv = Bukkit.getServer().createInventory(null, 9, MANDAR_NAME);
 		
 		ItemStack one = new ItemStack(Material.BLAZE_POWDER);
