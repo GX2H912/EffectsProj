@@ -23,15 +23,23 @@ public class main extends JavaPlugin{
 		
 		ItemStack one = new ItemStack(Material.BLAZE_POWDER);
 		
-		ItemStack two = new
+		ItemStack two = new ItemStack(Material.CAKE);
 		
 		ItemMeta oneMeta = one.getItemMeta();
 		
+		ItemMeta twoMeta = two.getItemMeta();
+		
 		oneMeta.setDisplayName(MANDAR_FIRSTITEM);
+		
+		twoMeta.setDisplayName(MANDAR_SECONDITEM);
 		
 		one.setItemMeta(oneMeta);
 		
+		two.setItemMeta(twoMeta);
+		
 		inv.setItem(0, one);
+		
+		inv.setItem(1, two)
 		
 		p.openInventory(inv);
 	}
@@ -42,7 +50,7 @@ public class main extends JavaPlugin{
 		
 		ItemMeta oneMeta = one.getItemMeta();
 		
-		oneMeta.setDisplayName(MANDAR_FIRSTITEMDISABLE);
+		oneMeta.setDisplayName(MANDAR_ITEMDISABLE);
 		
 		one.setItemMeta(oneMeta);
 		
@@ -52,9 +60,10 @@ public class main extends JavaPlugin{
 	}
 	
 	final String MANDAR_NAME = ChatColor.RED + "[Flame Particles Menu]";
-	final String MANDAR_FIRSTITEM = ChatColor.RED + "[Click here to enable first!]";
-	final String MANDAR_SECONDITEMDISABLE = ChatColor.RED + "[Click here to enable second item]"
-	final String MANDAR_FIRSTITEMDISABLE = ChatColor.RED + "[Click here to disable effects!]";
+	final String MANDAR_FIRSTITEM = ChatColor.RED + "[Click here to enable first effect!]";
+	final String MANDAR_THIRDITEM = ChatColor.RED + "[Click here to enable third effect!]"
+	final String MANDAR_SECONDITEM = ChatColor.RED + "[Click here to disable second effect!]"
+	final String MANDAR_ITEMDISABLE = ChatColor.RED + "[Click here to disable effects!]";
 	
 	
 	private static main plugin;
