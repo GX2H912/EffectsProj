@@ -33,18 +33,19 @@ public class EffectHandler implements Listener{
 		if(event.getInventory().getName() != plugin.MANDAR_NAME) {
 			return;
 		}
-		if(event.getCurrentItem().getItemMeta().getDisplayName().contains(plugin.MANDAR_FIRSTITEMDISABLE)) {
+		if(event.getCurrentItem().getItemMeta().getDisplayName().contains(plugin.MANDAR_ITEMDISABLE)) {
 			event.setCancelled(true);
-			plugin.itemWan.remove(event.getWhoClicked().getName());
+			if(plugin.itemWan.contains(event.getWhoClicked().getName)){
+				plugin.itemWan.remove(event.getWhoClicked().getName());
+			}
+			if(plugin.itemTwo.contains(event.getWhoClicked().getName)){
+				plugin.itemTwo.remove(event.getWhoClicked().getName());
+			}
+			if(plugin.itemtwee.contains(event.getWhoClicked().getName)){
+				plugin.itemtwee.remove(event.getWhoClicked().getName());
+			}
 			event.getWhoClicked().closeInventory();
 			p.sendMessage(plugin.MANDAR_NAME + " §bSuccessfully disabled flame effects!");
-			
-		}
-		if(event.getCurrentItem().getItemMeta().getDisplayName().contains(plugin.MANDAR_SECONDITEMDISABLE)) {
-			event.setCancelled(true);
-			plugin.itemTwo.remove(event.getWhoClicked().getName());
-			event.getWhoClicked().closeInventory();
-			p.sendMessage(plugin.MANDAR_NAME + " §bSuccessfully disabled cool effects!");
 			
 		}
 		
