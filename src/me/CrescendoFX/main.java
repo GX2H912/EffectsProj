@@ -71,8 +71,11 @@ public class main extends JavaPlugin{
 	
 	final String MANDAR_NAME = ChatColor.RED + "[Flame Particles Menu]";
 	final String MANDAR_FIRSTITEM = ChatColor.RED + "[Click here to enable first effect!]";
+	final String MANDAR_FIRSTITEMDISABLE = ChatColor.RED + "[Click here to disable first effect!]"
 	final String MANDAR_THIRDITEM = ChatColor.RED + "[Click here to enable third effect!]"
+	final String MANDAR_THIRDITEMDISABLE = ChatColor.RED + "[Click here to disable third effect!]"
 	final String MANDAR_SECONDITEM = ChatColor.RED + "[Click here to disable second effect!]"
+	final String MANDAR_SECONDITEMDISABLE = ChatColor.RED + "[Click here to disable second effect!]"
 	final String MANDAR_ITEMDISABLE = ChatColor.RED + "[Click here to disable effects!]";
 	
 	
